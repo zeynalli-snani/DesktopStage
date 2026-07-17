@@ -1,0 +1,18 @@
+﻿<Window x:Class="DesktopStage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopStage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Desktop Stage Controller" FontSize="20" FontWeight="Bold" Foreground="White" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <TextBlock Text="Open this URL on your mobile browser:" Foreground="#a6adc8" Margin="0,0,0,5" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="IpAddressText" Text="http://192.168.x.x:8080" FontSize="18" FontWeight="Medium" Foreground="#89b4fa" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock x:Name="StatusText" Text="Initializing..." Foreground="#f38ba8" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <TextBlock x:Name="CommandLogText" Text="" Foreground="#a6adc8" HorizontalAlignment="Center" FontStyle="Italic"/>
+        </StackPanel>
+    </Grid>
+</Window>
