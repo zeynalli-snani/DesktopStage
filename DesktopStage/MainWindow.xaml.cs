@@ -35,7 +35,7 @@ namespace DesktopStage
 
             // 2. Start HTTP Web Server on Port 8080
             _httpListener = new HttpListener();
-            _httpListener.Prefixes.Add($"http://{localIp}:8080/");
+            _httpListener.Prefixes.Add($"http://+:8080/");
             _httpListener.Start();
             Task.Run(() => ListenForHttpRequests());
 
